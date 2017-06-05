@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingRight="4dp"
+    android:paddingLeft="4dp"
+    android:gravity="bottom"
+    android:onClick="ClickClickClick">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey_heading"
+        android:onClick="ClickClickClick"
+        android:padding="6dp"
+        android:text="12:36 Leaving Austin to Los Angeles"
+        android:textColor="@android:color/background_light"
+        android:textSize="22sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/background_light"
+        android:paddingRight="10dp"
+        android:paddingBottom="20dp"
+        android:paddingTop="6dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="100"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="@string/currently"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="@string/train_code"
+                android:textColor="@android:color/background_dark"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/book_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/red_button"
+            android:padding="8dp"
+            android:text="@string/book"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrowup"
+            android:scaleType="fitCenter"
+            android:padding="2dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Northbound\n50min"
+            android:textColor="@android:color/background_light"
+            android:textSize="20sp"
+            android:layout_weight="2"
+            android:layout_gravity="center"
+            android:padding="0dp"/>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrowdown"
+            android:scaleType="fitCenter"
+            android:padding="2dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Southbound\n20min"
+            android:textColor="@android:color/background_light"
+            android:textSize="20sp"
+            android:layout_weight="2"
+            android:layout_gravity="center"
+            android:padding="0dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gps"
+            android:scaleType="fitCenter"
+            android:padding="2dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="You are:\n10 min\naway"
+            android:textColor="@android:color/background_light"
+            android:textSize="20sp"
+            android:layout_weight="2"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/news"
+            android:scaleType="fitCenter"
+            android:padding="2dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="WARNING:\nMorning\nDelays"
+            android:textColor="@android:color/background_light"
+            android:textSize="20sp"
+            android:layout_weight="2"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+</LinearLayout>
